@@ -134,11 +134,15 @@ GameObject:
   - component: {fileID: 335965782}
   - component: {fileID: 335965785}
   - component: {fileID: 335965784}
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
 <<<<<<<< HEAD:DGP-game/Assets/Scenes/FirstScene.unity
   - component: {fileID: 335965783}
 ========
   - component: {fileID: 335965786}
 >>>>>>>> andy-working-branch:DGP-game/Assets/Scenes/First scene.unity
+=======
+  - component: {fileID: 335965783}
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -167,18 +171,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: -200, y: -600}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
 <<<<<<<< HEAD:DGP-game/Assets/Scenes/FirstScene.unity
 --- !u!114 &335965783
 ========
 --- !u!114 &335965784
 >>>>>>>> andy-working-branch:DGP-game/Assets/Scenes/First scene.unity
+=======
+--- !u!114 &335965783
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335965781}
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
 <<<<<<<< HEAD:DGP-game/Assets/Scenes/FirstScene.unity
+=======
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 028b64cb45d3ddc4fa191e68b5fdc6b3, type: 3}
@@ -191,6 +202,10 @@ MonoBehaviour:
   - 2
   - 3 GOODBYE
   textSpeed: 0.02
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
+=======
+  i: 0
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
 --- !u!114 &335965784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +246,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335965781}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
 <<<<<<<< HEAD:DGP-game/Assets/Scenes/FirstScene.unity
 ========
 --- !u!114 &335965786
@@ -253,6 +269,8 @@ MonoBehaviour:
   - 41
   textSpeed: 0
 >>>>>>>> andy-working-branch:DGP-game/Assets/Scenes/First scene.unity
+=======
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
 --- !u!1 &464881102
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +510,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
 <<<<<<<< HEAD:DGP-game/Assets/Scenes/FirstScene.unity
 --- !u!1 &1073413069
 ========
@@ -712,6 +731,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018209882}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
 --- !u!1 &1073413069
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +745,6 @@ GameObject:
   - component: {fileID: 1073413072}
   - component: {fileID: 1073413071}
   - component: {fileID: 1073413070}
-  - component: {fileID: 1073413074}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -806,8 +826,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
   - {fileID: 1018209883}
 >>>>>>>> andy-working-branch:DGP-game/Assets/Scenes/First scene.unity
+=======
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
   - {fileID: 335965782}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -817,6 +840,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
 <<<<<<<< HEAD:DGP-game/Assets/Scenes/FirstScene.unity
 ========
 --- !u!114 &1073413074
@@ -832,6 +856,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 >>>>>>>> andy-working-branch:DGP-game/Assets/Scenes/First scene.unity
+=======
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
 --- !u!1 &1512867231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,6 +1032,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617948150}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD:DGP-game/Assets/Scenes/First scene.unity
 --- !u!1 &1835199544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,3 +1176,5 @@ CanvasRenderer:
   m_GameObject: {fileID: 1835199544}
 >>>>>>>> andy-working-branch:DGP-game/Assets/Scenes/First scene.unity
   m_CullTransparentMesh: 1
+=======
+>>>>>>> parent of a0d5b2b (added changing scene functionality):DGP-game/Assets/Scenes/SampleScene.unity
