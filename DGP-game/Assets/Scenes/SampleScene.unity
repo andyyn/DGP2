@@ -453,6 +453,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &705914279
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +517,9 @@ Transform:
 ========
 --- !u!1 &1018209882
 >>>>>>>> andy-working-branch:DGP-game/Assets/Scenes/First scene.unity
+=======
+--- !u!1 &932121827
+>>>>>>> parent of c465aa2 (idk what i did)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
