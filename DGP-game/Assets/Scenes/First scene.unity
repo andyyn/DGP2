@@ -352,15 +352,33 @@ MonoBehaviour:
   textComponent: {fileID: 1617948152}
   nameComponent: {fileID: 265935363}
   lines:
-  - Hello i am marie curie
-  - hello i am character
-  - how cool
-  - ikr
+  - Hello!
+  - Hi! I think I recognise you...
+  - Ah, that could be true.
+  - I am Marie Curie.
+  - Yeah that's right! You are the first woman to win the Nobel prize!
+  - You did amazing research on radioactivity!
+  - Thank you.
+  - What is your name?
+  - My name is not yet defined by the game dev team 8 :(
+  - What a shame. They should really get on with that
+  - Yeah.......
+  - Anyway! Shall we go outside?
+  - That we shall do. Press the button to go outside!
   names:
-  - marie curie
-  - character
-  - marie curie
-  - character
+  - ???
+  - Character
+  - ???
+  - Marie Curie
+  - Character
+  - Character
+  - Marie Curie
+  - Marie Curie
+  - Character
+  - Marie Curie
+  - Character
+  - Character
+  - Marie Curie
   textSpeed: 0.03
 --- !u!1 &464881102
 GameObject:
@@ -950,7 +968,7 @@ GameObject:
   - component: {fileID: 1835199547}
   - component: {fileID: 1835199546}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Scene Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -996,7 +1014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Change
+  m_text: Go outside
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
