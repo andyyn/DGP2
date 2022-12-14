@@ -361,7 +361,7 @@ MonoBehaviour:
   - character
   - marie curie
   - character
-  textSpeed: 0
+  textSpeed: 0.03
 --- !u!1 &464881102
 GameObject:
   m_ObjectHideFlags: 0
