@@ -6,7 +6,9 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public TextMeshProUGUI nameComponent;
     public string [] lines;
+    public string [] names;
     public float textSpeed;
     private int i;
 
@@ -14,6 +16,7 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
+        nameComponent.text = string.Empty;
         StartDialogue();
     }
 
@@ -21,12 +24,13 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButtonDown(0)){
-            if (textComponent.text == lines[i]){
+            if (textComponent.text == lines[i] && nameComponent.text == names[i]){
                 NextLine();
             }
             else {
                 StopAllCoroutines();
                 textComponent.text = lines[i];
+                nameComponent.text = names[i];
             }
         }
     }
@@ -39,6 +43,7 @@ public class Dialogue : MonoBehaviour
     IEnumerator TypeLine(){
         foreach (char c in lines[i].ToCharArray()){
             textComponent.text += c;
+            nameComponent.text = names[i];
             yield return new WaitForSeconds(textSpeed);
         }
     }
@@ -47,6 +52,7 @@ public class Dialogue : MonoBehaviour
         if (i < lines.Length -1){
             i++;
             textComponent.text = string.Empty;
+            nameComponent.text = string.Empty;
             StartCoroutine(TypeLine());
 
         }
