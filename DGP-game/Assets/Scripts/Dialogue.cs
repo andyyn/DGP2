@@ -11,6 +11,7 @@ public class Dialogue : MonoBehaviour
     public string [] names;
     public float textSpeed;
     private int i;
+    private string chName = CharacterNameReference.giveName();
 
     // Start is called before the first frame update
     void Start()
@@ -37,13 +38,16 @@ public class Dialogue : MonoBehaviour
 
     void StartDialogue(){
         i=0;
-        StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine(){
         foreach (char c in lines[i].ToCharArray()){
             textComponent.text += c;
+            if (names[i] == "Character"){
+                names[i] = chName;
+            }
             nameComponent.text = names[i];
+
             yield return new WaitForSeconds(textSpeed);
         }
     }
