@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+
     void StartDialogue(){
         i=0;
         StartCoroutine(TypeLine());
@@ -43,6 +45,7 @@ public class Dialogue : MonoBehaviour
     IEnumerator TypeLine(){
         foreach (char c in lines[i].ToCharArray()){
             textComponent.text += c;
+            SetPlayerName();
             nameComponent.text = names[i];
             yield return new WaitForSeconds(textSpeed);
         }
@@ -58,4 +61,12 @@ public class Dialogue : MonoBehaviour
         }
         else gameObject.SetActive(false);
     }
+
+    void SetPlayerName() 
+    {
+        if (names[i] == "") {
+            names[i]= PlayerPrefs.GetString("name");
+        }
+    }
+
 }

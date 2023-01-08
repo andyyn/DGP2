@@ -366,18 +366,18 @@ MonoBehaviour:
   - Anyway! Shall we go outside?
   - That we shall do. Press the button to go outside!
   names:
-  - ???
-  - Character
-  - ???
+  - 
+  - 
+  - 
   - Marie Curie
-  - Character
-  - Character
+  - 
+  - 
   - Marie Curie
   - Marie Curie
-  - Character
+  - 
   - Marie Curie
-  - Character
-  - Character
+  - 
+  - 
   - Marie Curie
   textSpeed: 0.03
 --- !u!1 &464881102
