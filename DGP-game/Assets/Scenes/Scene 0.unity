@@ -735,8 +735,14 @@ MonoBehaviour:
   textComponent: {fileID: 89102758}
   nameComponent: {fileID: 503976392}
   lines:
-  - 
+  - "It\u2019s my first day in university, and I\u2019m already so confused!"
+  - Where am I going?
+  - "So many hallways\u2026"
+  - Oh, I think this is the one!
   names:
+  - 
+  - 
+  - 
   - 
   textSpeed: 0.03
 --- !u!114 &1453927997
