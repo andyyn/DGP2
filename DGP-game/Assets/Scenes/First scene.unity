@@ -352,32 +352,100 @@ MonoBehaviour:
   textComponent: {fileID: 1617948152}
   nameComponent: {fileID: 265935363}
   lines:
-  - Hello!
-  - Hi! I think I recognise you...
+  - Oh! Sorry, this must be the wrong room!
+  - "\u2026"
+  - "I\u2019m sorry, I think I recognise you\u2026"
   - Ah, that could be true.
   - I am Marie Curie.
-  - Yeah that's right! You are the first woman to win the Nobel prize!
-  - You did amazing research on radioactivity!
+  - "Yeah that\u2019s right! You are the first woman to win the nobel prize! "
+  - You did amazing research on radioactivity.
   - Thank you.
-  - What is your name?
-  - My name is not yet defined by the game dev team 8 :(
-  - What a shame. They should really get on with that.
-  - Yeah.......
-  - Anyway! Shall we go outside?
-  - That we shall do. Press the button to go outside!
+  - And you must be *name* right?
+  - "Yes, that is me\u2026"
+  - "\u2026 How do you know?"
+  - I have been looking for you.
+  - I need your help.
+  - "My help\u2026?"
+  - Yes *name*.
+  - You are the only one who can help me with this.
+  - '*thinks* How does she even know who I am?'
+  - I have returned for a special task which could save our world from a climate
+    disaster.
+  - "\u2026 Climate disaster?"
+  - Yes. There is no time to dwell.
+  - I am working on a fusion energy machine which could save our planet through unlimited
+    power availability.
+  - A crazy device has to be made, which I am unable to finish.
+  - I need your help and I believe that you are the right person for this.
+  - " I\u2019m sorry, I think you might have the wrong person. "
+  - "It\u2019s my first day!"
+  - I could never help someone like you.
+  - Trust me. I know what you can do. I know you *name*.
+  - Listen carefully.
+  - 'You need to train yourself and collect the skills needed to be the hero our
+    world needs right now! '
+  - Do you think you can help me?
+  - "\u2026 Yes."
+  - Yes, I can help.
+  - Great!
+  - You have to look for professor Edith Clarke.
+  - '*thinks* Edith Clarke is here too?!'
+  - If you tell her my name she will know that I sent you.
+  - 'She is a great chemist and will help you possess your first skill. '
+  - "You can find her in the blue building. It\u2019s called Atlas."
+  - "Atlas\u2026"
+  - 'When you have collected all the skills you can combine them and help me with
+    finishing this powerful machine. '
+  - On your way, you can stumble across some challenges and help people in need.
+  - Any good deed can be rewarding.
+  - The powers you gain from these challenges are needed to get more skills.
+  - The more challenges you can fulfill the more you can help me.
+  - Now I have to get to work again. You can start your journey outside.
   names:
   - 
   - 
   - 
   - Marie Curie
+  - Marie Curie
+  - 
+  - 
+  - Marie Curie
+  - Marie Curie
   - 
   - 
   - Marie Curie
   - Marie Curie
   - 
   - Marie Curie
+  - Marie Curie
+  - 
+  - Marie Curie
+  - 
+  - Marie Curie
+  - Marie Curie
+  - Marie Curie
+  - Marie Curie
   - 
   - 
+  - 
+  - Marie Curie
+  - Marie Curie
+  - Marie Curie
+  - Marie Curie
+  - 
+  - 
+  - Marie Curie
+  - Marie Curie
+  - 
+  - Marie Curie
+  - Marie Curie
+  - Marie Curie
+  - 
+  - Marie Curie
+  - Marie Curie
+  - Marie Curie
+  - Marie Curie
+  - Marie Curie
   - Marie Curie
   textSpeed: 0.03
 --- !u!1 &464881102
