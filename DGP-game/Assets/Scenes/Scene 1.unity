@@ -351,6 +351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1617948152}
   nameComponent: {fileID: 265935363}
+  buttonComponent: {fileID: 1018209884}
   lines:
   - Oh! Sorry, this must be the wrong room!
   - "\u2026"
