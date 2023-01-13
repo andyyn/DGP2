@@ -8,6 +8,7 @@ public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI nameComponent;
+    public Button buttonComponent;
     public string [] lines;
     public string [] names;
     public float textSpeed;
@@ -19,6 +20,7 @@ public class Dialogue : MonoBehaviour
         textComponent.text = string.Empty;
         nameComponent.text = string.Empty;
         StartDialogue();
+        buttonComponent.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -58,8 +60,10 @@ public class Dialogue : MonoBehaviour
             nameComponent.text = string.Empty;
             StartCoroutine(TypeLine());
 
+        } else {
+            gameObject.SetActive(false);
+            buttonComponent.gameObject.SetActive(true);
         }
-        else gameObject.SetActive(false);
     }
 
     void SetPlayerName() 
