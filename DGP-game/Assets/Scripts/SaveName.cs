@@ -13,7 +13,7 @@ public class SaveName : MonoBehaviour
     {
         PlayerPrefs.SetString("name", textBox.text);
         Debug.Log("Name :" + PlayerPrefs.GetString("name"));
-        SceneManager.LoadSceneAsync("First scene");
+        SceneManager.LoadSceneAsync("Scene 1");
     }
     
     
