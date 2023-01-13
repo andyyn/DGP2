@@ -22,6 +22,9 @@ public class HintStaircaseGame : MonoBehaviour
         hint2.onClick.AddListener(Hint2Active);
         hint3.onClick.AddListener(Hint3Active);
         submit.onClick.AddListener(Check_Answer);
+        happy_faces = 3;
+        attempts = 0;
+        hintsUsed = 0;
         
     }
 
