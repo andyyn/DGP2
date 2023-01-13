@@ -12,7 +12,7 @@ public class HintStaircaseGame : MonoBehaviour
     private int hintsUsed = 0;
     public Button hint1, hint2, hint3, hint0, submit;
     public TMP_InputField user_Answer;
-    public GameObject Hint1P, Hint2P, Hint3P, WrongAnsP, CorrectAnsP, QuesP;
+    public GameObject Hint1P, Hint2P, Hint3P, WrongAnsP, CorrectAnsP, QuesP, HintsP;
 
 
     // Start is called before the first frame update
@@ -83,6 +83,7 @@ public class HintStaircaseGame : MonoBehaviour
             PlayerPrefs.SetInt("Staircase_Attempts", attempts);
             PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
             CorrectAnsP.SetActive(true);
+            HintsP.SetActive(false);
             QuesP.SetActive(false);
             Debug.Log("Correct Answer!");
         }
