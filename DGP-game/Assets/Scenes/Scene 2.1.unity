@@ -1026,15 +1026,31 @@ MonoBehaviour:
   nameComponent: {fileID: 1737406631}
   buttonComponent: {fileID: 1646066061}
   lines:
-  - "What a huge campus! I really don\u2019t know where to go!"
-  - Which one is Atlas?
-  - "Maybe I should ask someone\u2026"
+  - Hi! could I ask you something?
   - ...
+  - "Now is not really the best time\u2026"
+  - What's wrong?
+  - You look stressed.
+  - I need to get home as soon as possible but my bike lock is stuck!
+  - I am new around here.
+  - It's my first day, I only had time to see Atlas!
+  - "*thinks* Atlas\u2026"
+  - But I really need to fix this, sorry!
+  - Wait!
+  - Maybe I could give it a try...
   names:
   - 
-  - 
-  - 
-  - 
+  - ???
+  - ???
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
   textSpeed: 0.03
 --- !u!114 &2130641459
 MonoBehaviour:
