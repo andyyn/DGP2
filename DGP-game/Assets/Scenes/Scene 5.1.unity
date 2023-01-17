@@ -315,12 +315,9 @@ MonoBehaviour:
   nameComponent: {fileID: 127589381}
   buttonComponent: {fileID: 0}
   lines:
-  - Ah how great, I knew you could do this! You are one step closer to saving the
-    world.
-  - 'If you collect more powers you will be able to finish the machine! '
+  - 
   names:
-  - Edith Clarke
-  - Edith Clarke
+  - 
   textSpeed: 0.03
 --- !u!114 &436677889
 MonoBehaviour:
