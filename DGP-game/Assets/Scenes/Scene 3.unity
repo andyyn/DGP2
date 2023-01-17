@@ -382,9 +382,21 @@ MonoBehaviour:
   nameComponent: {fileID: 40559817}
   buttonComponent: {fileID: 1732021734}
   lines:
-  - 
+  - Ah, thank you so much. My name is Bart.
+  - What did you want to ask?
+  - Do you know where I can find Atlas?
+  - 'I need to find professor Edith Clarke there. '
+  - That is the building right behind us.
+  - You can find the professor on the ninth floor.
+  - 'Goodluck! '
   names:
+  - Bart
+  - Bart
   - 
+  - 
+  - Bart
+  - Bart
+  - Bart
   textSpeed: 0.03
 --- !u!114 &463173920
 MonoBehaviour:
