@@ -361,13 +361,13 @@ MonoBehaviour:
   - "Yeah that\u2019s right! You are the first woman to win the nobel prize! "
   - You did amazing research on radioactivity.
   - Thank you.
-  - And you must be *name* right?
+  - And you must be _ right?
   - "Yes, that is me\u2026"
   - "\u2026 How do you know?"
   - I have been looking for you.
   - I need your help.
   - "My help\u2026?"
-  - Yes *name*.
+  - Yes _.
   - You are the only one who can help me with this.
   - '*thinks* How does she even know who I am?'
   - I have returned for a special task which could save our world from a climate
