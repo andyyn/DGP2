@@ -315,9 +315,29 @@ MonoBehaviour:
   nameComponent: {fileID: 127589381}
   buttonComponent: {fileID: 0}
   lines:
-  - 
+  - Hi!
+  - Are you Edith Clarke?
+  - Yes I am.
+  - Who are you?
+  - I am _, Marie Curie sent me.
+  - Oh yes, of course.
+  - Listen carefully.
+  - Okay.
+  - As you probably already know I am very good with numbers.
+  - I will try to make you a numerical legend as well.
+  - All you have to do is solve this puzzle.
   names:
   - 
+  - 
+  - Edith Clarke
+  - Edith Clarke
+  - 
+  - Edith Clarke
+  - Edith Clarke
+  - 
+  - Edith Clarke
+  - Edith Clarke
+  - Edith Clarke
   textSpeed: 0.03
 --- !u!114 &436677889
 MonoBehaviour:
