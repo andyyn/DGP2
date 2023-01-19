@@ -4,9 +4,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class HintStaircaseGame : MonoBehaviour
+public class CrackTheCodeGame : MonoBehaviour
 {
-   
+
     private int happy_faces = 3;
     private int attempts = 0;
     private int hintsUsed = 0;
@@ -25,32 +25,32 @@ public class HintStaircaseGame : MonoBehaviour
         happy_faces = 3;
         attempts = 0;
         hintsUsed = 0;
-        
+
     }
 
     void Update_Happy_Faces()
     {
         if (happy_faces > 0)
         {
-            happy_faces-=1;
+            happy_faces -= 1;
         }
         PlayerPrefs.SetInt("Staircase_Happy_Faces", happy_faces);
         Debug.Log("Happy Face Count:" + happy_faces);
     }
     void Hint1Active()
     {
-        hintsUsed +=1;
+        hintsUsed += 1;
         PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
         Hint1P.SetActive(true);
         Hint2P.SetActive(false);
         Hint3P.SetActive(false);
-        
+
         Update_Happy_Faces();
     }
 
     void Hint2Active()
     {
-        hintsUsed +=1;
+        hintsUsed += 1;
         PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
         Hint1P.SetActive(false);
         Hint2P.SetActive(true);
@@ -61,7 +61,7 @@ public class HintStaircaseGame : MonoBehaviour
 
     void Hint3Active()
     {
-        hintsUsed +=1;
+        hintsUsed += 1;
         PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
         Hint1P.SetActive(false);
         Hint2P.SetActive(false);
@@ -78,7 +78,7 @@ public class HintStaircaseGame : MonoBehaviour
         }
 
         // Answer correct
-        else if (user_Answer.text == "64")
+        else if (user_Answer.text == "394")
         {
             attempts += 1;
             // Save game progress
@@ -91,7 +91,8 @@ public class HintStaircaseGame : MonoBehaviour
             Debug.Log("Correct Answer!");
         }
         // Answer wrong
-        else{
+        else
+        {
             attempts += 1;
             PlayerPrefs.SetInt("Staircase_Attempts", attempts);
             Update_Happy_Faces();
@@ -101,9 +102,9 @@ public class HintStaircaseGame : MonoBehaviour
 
         }
 
-    
-    }
-    
 
-    
+    }
+
+
+
 }
