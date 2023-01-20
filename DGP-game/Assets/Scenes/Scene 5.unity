@@ -313,7 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 953865643}
   nameComponent: {fileID: 127589381}
-  buttonComponent: {fileID: 0}
+  buttonComponent: {fileID: 1916147748}
   lines:
   - Ah how great, I knew you could do this! You are one step closer to saving the
     world.
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go outside
+  m_text: Finish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -955,7 +955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1916147747
 RectTransform:
   m_ObjectHideFlags: 0
@@ -965,7 +965,7 @@ RectTransform:
   m_GameObject: {fileID: 1916147746}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.3083, y: 2.3083, z: 2.3083}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 597537431}
@@ -974,7 +974,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 783, y: -134.34952}
+  m_AnchoredPosition: {x: 685, y: -44}
   m_SizeDelta: {x: 180.5103, y: 72.3629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916147748
