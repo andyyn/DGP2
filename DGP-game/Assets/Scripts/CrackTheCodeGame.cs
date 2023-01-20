@@ -4,15 +4,18 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class HintStaircaseGame : MonoBehaviour
+public class CrackTheCodeGame : MonoBehaviour
 {
-   
+
     private int happy_faces = 3;
     private int attempts = 0;
     private int hintsUsed = 0;
     public Button hint1, hint2, hint3, hint0, submit;
     public TMP_InputField user_Answer;
     public GameObject Hint1P, Hint2P, Hint3P, WrongAnsP, CorrectAnsP, QuesP, HintsP;
+
+    public AudioSource source;
+    public AudioClip clip; 
 
 
     // Start is called before the first frame update
@@ -25,32 +28,32 @@ public class HintStaircaseGame : MonoBehaviour
         happy_faces = 3;
         attempts = 0;
         hintsUsed = 0;
-        
+
     }
 
     void Update_Happy_Faces()
     {
         if (happy_faces > 0)
         {
-            happy_faces-=1;
+            happy_faces -= 1;
         }
         PlayerPrefs.SetInt("Staircase_Happy_Faces", happy_faces);
         Debug.Log("Happy Face Count:" + happy_faces);
     }
     void Hint1Active()
     {
-        hintsUsed +=1;
+        hintsUsed += 1;
         PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
         Hint1P.SetActive(true);
         Hint2P.SetActive(false);
         Hint3P.SetActive(false);
-        
+
         Update_Happy_Faces();
     }
 
     void Hint2Active()
     {
-        hintsUsed +=1;
+        hintsUsed += 1;
         PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
         Hint1P.SetActive(false);
         Hint2P.SetActive(true);
@@ -61,7 +64,7 @@ public class HintStaircaseGame : MonoBehaviour
 
     void Hint3Active()
     {
-        hintsUsed +=1;
+        hintsUsed += 1;
         PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
         Hint1P.SetActive(false);
         Hint2P.SetActive(false);
@@ -78,7 +81,7 @@ public class HintStaircaseGame : MonoBehaviour
         }
 
         // Answer correct
-        else if (user_Answer.text == "64")
+        else if (user_Answer.text == "394")
         {
             attempts += 1;
             // Save game progress
@@ -88,10 +91,13 @@ public class HintStaircaseGame : MonoBehaviour
             CorrectAnsP.SetActive(true);
             HintsP.SetActive(false);
             QuesP.SetActive(false);
+
+            source.PlayOneShot(clip);
             Debug.Log("Correct Answer!");
         }
         // Answer wrong
-        else{
+        else
+        {
             attempts += 1;
             PlayerPrefs.SetInt("Staircase_Attempts", attempts);
             Update_Happy_Faces();
@@ -101,9 +107,9 @@ public class HintStaircaseGame : MonoBehaviour
 
         }
 
-    
-    }
-    
 
-    
+    }
+
+
+
 }
