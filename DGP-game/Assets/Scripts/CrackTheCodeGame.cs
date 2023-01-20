@@ -14,6 +14,9 @@ public class CrackTheCodeGame : MonoBehaviour
     public TMP_InputField user_Answer;
     public GameObject Hint1P, Hint2P, Hint3P, WrongAnsP, CorrectAnsP, QuesP, HintsP;
 
+    public AudioSource source;
+    public AudioClip clip; 
+
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +91,8 @@ public class CrackTheCodeGame : MonoBehaviour
             CorrectAnsP.SetActive(true);
             HintsP.SetActive(false);
             QuesP.SetActive(false);
+
+            source.PlayOneShot(clip);
             Debug.Log("Correct Answer!");
         }
         // Answer wrong
