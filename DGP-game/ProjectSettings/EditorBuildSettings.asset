@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene 2.1.unity
     guid: 5124240e6174ac3498cd20b1e530463f
   - enabled: 1
+    path: Assets/Scenes/Scene 2.2.unity
+    guid: db0cc17494da79f4894c8575a9ba4ea6
+  - enabled: 1
     path: Assets/Scenes/Scene 3.unity
     guid: 826bb538582e42a4c8d076a88b080b40
   - enabled: 1
