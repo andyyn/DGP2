@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CrackTheCodeGame : MonoBehaviour
 {
 
-    private int happy_faces = 3;
+    private int happy_faces = 5;
     private int attempts = 0;
     private int hintsUsed = 0;
     public Button hint1, hint2, hint3, hint0, submit;
@@ -25,7 +25,7 @@ public class CrackTheCodeGame : MonoBehaviour
         hint2.onClick.AddListener(Hint2Active);
         hint3.onClick.AddListener(Hint3Active);
         submit.onClick.AddListener(Check_Answer);
-        happy_faces = 3;
+        happy_faces = 5;
         attempts = 0;
         hintsUsed = 0;
 
@@ -33,7 +33,7 @@ public class CrackTheCodeGame : MonoBehaviour
 
     void Update_Happy_Faces()
     {
-        if (happy_faces > 0)
+        if (happy_faces > 1)
         {
             happy_faces -= 1;
         }
