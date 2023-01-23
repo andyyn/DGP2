@@ -85,6 +85,7 @@ public class HintStaircaseGame : MonoBehaviour
             PlayerPrefs.SetInt("Staircase_Happy_Faces", happy_faces);
             PlayerPrefs.SetInt("Staircase_Attempts", attempts);
             PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
+            QuesP.SetActive(false);
             CorrectAnsP.SetActive(true);
             HintsP.SetActive(false);
             QuesP.SetActive(false);
