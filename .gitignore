@@ -61,3 +61,5 @@ sysinfo.txt
 crashlytics-build.properties
 
 DGP-game/Assets/Scenes/SampleScene.unity
+DGP-game/UserSettings/EditorUserSettings.asset
+DGP-game/ProjectSettings/EditorBuildSettings.asset
