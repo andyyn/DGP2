@@ -3262,7 +3262,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 310
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3286,7 +3286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787729135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 589, y: 318, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3732,7 +3732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -38.538}
+  m_AnchoredPosition: {x: 0, y: -38.538025}
   m_SizeDelta: {x: -476.0983, y: -185.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894493649
@@ -5628,7 +5628,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1318919822
@@ -6209,7 +6209,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e1e3e64dac28149d1bf7e15801897c70, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc2b70df19ba1f548a3b9820a101f72c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6855,7 +6855,7 @@ GameObject:
   - component: {fileID: 1795174733}
   - component: {fileID: 1795174737}
   - component: {fileID: 1795174734}
-  - component: {fileID: 1795174736}
+  - component: {fileID: 1795174738}
   - component: {fileID: 1795174735}
   m_Layer: 5
   m_Name: Correct Answer Panel
@@ -6883,7 +6883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -38.538}
+  m_AnchoredPosition: {x: 0, y: -38.538025}
   m_SizeDelta: {x: -476.0983, y: -185.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1795174734
@@ -6928,21 +6928,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1795174736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795174732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88f4f98a7a8e2b4ba7533721b01f77f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hints: {fileID: 27184755}
-  attempts: {fileID: 1317936033}
-  happyFaces: {fileID: 2053781585}
 --- !u!222 &1795174737
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6951,6 +6936,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795174732}
   m_CullTransparentMesh: 1
+--- !u!114 &1795174738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795174732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07f4d260c2aa5b45aa68e5b6da1f259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hints: {fileID: 27184755}
+  attempts: {fileID: 1317936033}
+  happyFaces: {fileID: 2053781585}
 --- !u!1 &2010508933
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,7 +7075,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2010508936
@@ -7354,7 +7354,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 787729137}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -7991,7 +7991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: -68.558}
+  m_AnchoredPosition: {x: -50, y: -68.558014}
   m_SizeDelta: {x: 569.9038, y: -97.8556}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2132179199

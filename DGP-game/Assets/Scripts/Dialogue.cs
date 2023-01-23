@@ -15,7 +15,7 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
     private int i;
     private string player_name;
-    private StringBuilder current_line;
+    private StringBuilder current_line; // stores dialogue line + player name
     private string new_current_line;
 
     // Start is called before the first frame update

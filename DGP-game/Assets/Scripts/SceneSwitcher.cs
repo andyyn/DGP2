@@ -12,4 +12,12 @@ public class SceneSwitcher : MonoBehaviour
     public void Back(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
+
+    public void Tab1(){
+        SceneManager.LoadSceneAsync("Progress2");
+    }
+
+    public void Tab2(){
+        SceneManager.LoadSceneAsync("Progress 1");
+    }
 }

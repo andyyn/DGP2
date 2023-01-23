@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CrackTheCodeGame : MonoBehaviour
 {
 
-    private int happy_faces = 3;
+    private int happy_faces = 5;
     private int attempts = 0;
     private int hintsUsed = 0;
     public Button hint1, hint2, hint3, hint0, submit;
@@ -25,7 +25,7 @@ public class CrackTheCodeGame : MonoBehaviour
         hint2.onClick.AddListener(Hint2Active);
         hint3.onClick.AddListener(Hint3Active);
         submit.onClick.AddListener(Check_Answer);
-        happy_faces = 3;
+        happy_faces = 5;
         attempts = 0;
         hintsUsed = 0;
 
@@ -33,17 +33,17 @@ public class CrackTheCodeGame : MonoBehaviour
 
     void Update_Happy_Faces()
     {
-        if (happy_faces > 0)
+        if (happy_faces > 1)
         {
             happy_faces -= 1;
         }
-        PlayerPrefs.SetInt("Staircase_Happy_Faces", happy_faces);
+        PlayerPrefs.SetInt("CTC_Happy_Faces", happy_faces);
         Debug.Log("Happy Face Count:" + happy_faces);
     }
     void Hint1Active()
     {
         hintsUsed += 1;
-        PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
+        PlayerPrefs.SetInt("CTC_Hint_Used", hintsUsed);
         Hint1P.SetActive(true);
         Hint2P.SetActive(false);
         Hint3P.SetActive(false);
@@ -54,7 +54,7 @@ public class CrackTheCodeGame : MonoBehaviour
     void Hint2Active()
     {
         hintsUsed += 1;
-        PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
+        PlayerPrefs.SetInt("CTC_Hint_Used", hintsUsed);
         Hint1P.SetActive(false);
         Hint2P.SetActive(true);
         Hint3P.SetActive(false);
@@ -65,7 +65,7 @@ public class CrackTheCodeGame : MonoBehaviour
     void Hint3Active()
     {
         hintsUsed += 1;
-        PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
+        PlayerPrefs.SetInt("CTC_Hint_Used", hintsUsed);
         Hint1P.SetActive(false);
         Hint2P.SetActive(false);
         Hint3P.SetActive(true);
@@ -85,9 +85,9 @@ public class CrackTheCodeGame : MonoBehaviour
         {
             attempts += 1;
             // Save game progress
-            PlayerPrefs.SetInt("Staircase_Happy_Faces", happy_faces);
-            PlayerPrefs.SetInt("Staircase_Attempts", attempts);
-            PlayerPrefs.SetInt("Staircase_Hint_Used", hintsUsed);
+            PlayerPrefs.SetInt("CTC_Happy_Faces", happy_faces);
+            PlayerPrefs.SetInt("CTC_Attempts", attempts);
+            PlayerPrefs.SetInt("CTC_Hint_Used", hintsUsed);
             CorrectAnsP.SetActive(true);
             HintsP.SetActive(false);
             QuesP.SetActive(false);
@@ -99,7 +99,7 @@ public class CrackTheCodeGame : MonoBehaviour
         else
         {
             attempts += 1;
-            PlayerPrefs.SetInt("Staircase_Attempts", attempts);
+            PlayerPrefs.SetInt("CTC_Attempts", attempts);
             Update_Happy_Faces();
             WrongAnsP.SetActive(true);
             QuesP.SetActive(false);
