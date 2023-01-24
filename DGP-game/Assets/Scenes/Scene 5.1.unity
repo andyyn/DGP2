@@ -591,7 +591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Become Numerical Legend!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -966,6 +966,7 @@ GameObject:
   - component: {fileID: 1916147750}
   - component: {fileID: 1916147749}
   - component: {fileID: 1916147748}
+  - component: {fileID: 1916147751}
   m_Layer: 5
   m_Name: ChangeScene
   m_TagString: Untagged
@@ -980,7 +981,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916147746}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0197949, w: 0.9998041}
+  m_LocalRotation: {x: 0, y: 0, z: -0.013089582, w: 0.99991435}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.322685, y: 2.2797618, z: 2.301511}
   m_ConstrainProportionsScale: 0
@@ -988,11 +989,11 @@ RectTransform:
   - {fileID: 597537431}
   m_Father: {fileID: 559095309}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.268}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: 226}
-  m_SizeDelta: {x: 198.869, y: 105.742}
+  m_AnchoredPosition: {x: -165.30203, y: 220.90767}
+  m_SizeDelta: {x: 233.4851, y: 132.085}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916147748
 MonoBehaviour:
@@ -1063,7 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6392157}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.19607843}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1088,3 +1089,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916147746}
   m_CullTransparentMesh: 1
+--- !u!114 &1916147751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916147746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df37f843e3525744a06d2cccd65f9a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 0.9607843, g: 0.9254902, b: 0.85882354, a: 0.09803922}
+  endColor: {r: 0, g: 0, b: 0, a: 0.09803922}
+  speed: 1
