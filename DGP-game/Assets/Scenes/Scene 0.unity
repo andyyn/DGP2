@@ -799,10 +799,11 @@ MonoBehaviour:
   nameComponent: {fileID: 503976392}
   buttonComponent: {fileID: 2018928294}
   lines:
-  - "It\u2019s my first day in university, and I\u2019m already so confused!"
-  - Where am I going?
-  - "So many hallways\u2026"
-  - Oh, I think this is the one!
+  - "<i> It\u2019s my first day in university, and I\u2019m already so confused!
+    </i>"
+  - <i> Where am I going? </i>
+  - "<i> So many hallways\u2026 </i>"
+  - <i> Oh, I think this is the one! </i>
   names:
   - 
   - 

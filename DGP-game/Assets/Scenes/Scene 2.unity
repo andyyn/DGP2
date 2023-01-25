@@ -1105,10 +1105,9 @@ MonoBehaviour:
   nameComponent: {fileID: 1737406631}
   buttonComponent: {fileID: 1646066061}
   lines:
-  - "What a huge campus! I really don\u2019t know where to go!"
-  - Which one is Atlas?
-  - "Maybe I should ask someone\u2026"
-  - ...
+  - "<i> What a huge campus! I really don\u2019t know where to go! </i>"
+  - <i> Which one is Atlas? </i>
+  - "<i> Maybe I should ask someone\u2026 </i>"
   names:
   - 
   - 
