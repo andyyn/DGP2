@@ -42,7 +42,7 @@ public class NumericalLegendGame : MonoBehaviour
         {
             happy_faces -= 1;
         }
-        PlayerPrefs.SetInt("NL_Happy_Faces", happy_faces);
+        PlayerPrefs.SetInt("NL_Happy_Faces", 5 - happy_faces);
         Debug.Log("Happy Face Count:" + happy_faces);
     }
     void Hint1Active()
