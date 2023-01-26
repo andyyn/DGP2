@@ -26,7 +26,7 @@ public class NumericalLegendGame : MonoBehaviour
         hint2.onClick.AddListener(Hint2Active);
         hint3.onClick.AddListener(Hint3Active);
         submit.onClick.AddListener(Check_Answer);
-        happy_faces = 5;
+        happy_faces = 7;
         attempts = 0;
         hintsUsed = 0;
         // if not played then keep 0
@@ -42,7 +42,7 @@ public class NumericalLegendGame : MonoBehaviour
         {
             happy_faces -= 1;
         }
-        PlayerPrefs.SetInt("NL_Happy_Faces", 5 - happy_faces);
+        PlayerPrefs.SetInt("NL_Happy_Faces", 7 - happy_faces);
         Debug.Log("Happy Face Count:" + happy_faces);
     }
     void Hint1Active()

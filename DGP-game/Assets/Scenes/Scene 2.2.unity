@@ -2200,7 +2200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: 328}
+  m_AnchoredPosition: {x: 183, y: 218}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &435624504
@@ -3939,7 +3939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: 328}
+  m_AnchoredPosition: {x: 180, y: 219}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862082012
@@ -4813,7 +4813,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4292603125
   m_fontColor: {r: 0.9607843, g: 0.9254902, b: 0.85882354, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6025,7 +6025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: 328}
+  m_AnchoredPosition: {x: 182, y: 219}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1294531065
@@ -6801,8 +6801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 727.99994, y: -65}
-  m_SizeDelta: {x: -1478.6646, y: -328.0578}
+  m_AnchoredPosition: {x: 727.99994, y: 51.455017}
+  m_SizeDelta: {x: -1478.6646, y: -560.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1460685236
 GameObject:
@@ -7415,8 +7415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 715, y: 51.45468}
-  m_SizeDelta: {x: -1452.6647, y: -560.9672}
+  m_AnchoredPosition: {x: 727.99994, y: 51.45468}
+  m_SizeDelta: {x: -1478.7, y: -560.9672}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1552743973
 GameObject:
@@ -7649,8 +7649,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 727.99994, y: -65}
-  m_SizeDelta: {x: -1478.6646, y: -328.0578}
+  m_AnchoredPosition: {x: 727.99994, y: 51.455017}
+  m_SizeDelta: {x: -1478.6646, y: -560.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1570427460
 GameObject:
@@ -10195,7 +10195,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4292603125
   m_fontColor: {r: 0.9607843, g: 0.9254902, b: 0.85882354, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
