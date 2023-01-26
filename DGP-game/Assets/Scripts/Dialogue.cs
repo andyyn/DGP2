@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI nameComponent;
     public Button buttonComponent;
+    public Image skipComponent;
+    public TextMeshProUGUI continueComponent;
     public string [] lines;
     public string [] names;
     public float textSpeed;
@@ -23,8 +25,10 @@ public class Dialogue : MonoBehaviour
     {
         textComponent.text = string.Empty;
         nameComponent.text = string.Empty;
-        
+        skipComponent.gameObject.SetActive(false);
+        continueComponent.gameObject.SetActive(false);
         StartDialogue();
+        // Invoke("Show", 1f);
         buttonComponent.gameObject.SetActive(false);
     }
 
@@ -43,6 +47,14 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    // void Show(){
+    //     laser.SetActivee(true);
+    //     Invoke("Hide",3f);
+    // }
+
+    // void Hide(){
+    //     laser.SetActive(false);
+    // }
 
     void StartDialogue(){
         i=0; 
@@ -60,8 +72,12 @@ public class Dialogue : MonoBehaviour
             SetPlayerName();
             nameComponent.text = names[i];            
             yield return new WaitForSeconds(textSpeed);
-            
         }
+        yield return new WaitForSecondsRealtime(4);
+        skipComponent.gameObject.SetActive(true);
+        yield return new WaitForSecondsRealtime(4);
+        continueComponent.gameObject.SetActive(true);
+
     }
 
     void NextLine(){
@@ -71,8 +87,9 @@ public class Dialogue : MonoBehaviour
             FindName();
             textComponent.text = string.Empty;
             nameComponent.text = string.Empty;
+            skipComponent.gameObject.SetActive(false);
+            continueComponent.gameObject.SetActive(false);
             StartCoroutine(TypeLine());
-
         } else {
             gameObject.SetActive(false);
             buttonComponent.gameObject.SetActive(true);
