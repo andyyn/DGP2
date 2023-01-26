@@ -29,6 +29,10 @@ public class NumericalLegendGame : MonoBehaviour
         happy_faces = 5;
         attempts = 0;
         hintsUsed = 0;
+        // if not played then keep 0
+        PlayerPrefs.SetInt("NL_Happy_Faces", 0);
+        PlayerPrefs.SetInt("NL_Hint_Used",0);
+        PlayerPrefs.SetInt("NL_Attempts",0);
 
     }
 
@@ -38,13 +42,13 @@ public class NumericalLegendGame : MonoBehaviour
         {
             happy_faces -= 1;
         }
-        PlayerPrefs.SetInt("CTC_Happy_Faces", happy_faces);
+        PlayerPrefs.SetInt("NL_Happy_Faces", 5 - happy_faces);
         Debug.Log("Happy Face Count:" + happy_faces);
     }
     void Hint1Active()
     {
         hintsUsed += 1;
-        PlayerPrefs.SetInt("CTC_Hint_Used", hintsUsed);
+        PlayerPrefs.SetInt("NL_Hint_Used", hintsUsed);
         Hint1P.SetActive(true);
         Hint2P.SetActive(false);
         Hint3P.SetActive(false);
@@ -55,7 +59,7 @@ public class NumericalLegendGame : MonoBehaviour
     void Hint2Active()
     {
         hintsUsed += 1;
-        PlayerPrefs.SetInt("CTC_Hint_Used", hintsUsed);
+        PlayerPrefs.SetInt("NL_Hint_Used", hintsUsed);
         Hint1P.SetActive(false);
         Hint2P.SetActive(true);
         Hint3P.SetActive(false);
@@ -66,7 +70,7 @@ public class NumericalLegendGame : MonoBehaviour
     void Hint3Active()
     {
         hintsUsed += 1;
-        PlayerPrefs.SetInt("CTC_Hint_Used", hintsUsed);
+        PlayerPrefs.SetInt("NL_Hint_Used", hintsUsed);
         Hint1P.SetActive(false);
         Hint2P.SetActive(false);
         Hint3P.SetActive(true);
@@ -76,7 +80,7 @@ public class NumericalLegendGame : MonoBehaviour
     void Check_Answer()
     {
         // Answer empty
-        if (user_Answer_Min.text == "" && user_Answer_Max.text == "")
+        if (user_Answer_Min.text == "" || user_Answer_Max.text == "")
         {
             Debug.Log("Enter a number");
         }
@@ -86,9 +90,9 @@ public class NumericalLegendGame : MonoBehaviour
         {
             attempts += 1;
             // Save game progress
-            PlayerPrefs.SetInt("CTC_Happy_Faces", happy_faces);
-            PlayerPrefs.SetInt("CTC_Attempts", attempts);
-            PlayerPrefs.SetInt("CTC_Hint_Used", hintsUsed);
+            PlayerPrefs.SetInt("NL_Happy_Faces", happy_faces);
+            PlayerPrefs.SetInt("NL_Attempts", attempts);
+            PlayerPrefs.SetInt("NL_Hint_Used", hintsUsed);
             CorrectAnsP.SetActive(true);
             HintsP.SetActive(false);
             QuesP.SetActive(false);
@@ -100,7 +104,7 @@ public class NumericalLegendGame : MonoBehaviour
         else
         {
             attempts += 1;
-            PlayerPrefs.SetInt("CTC_Attempts", attempts);
+            PlayerPrefs.SetInt("NL_Attempts", attempts);
             Update_Happy_Faces();
             WrongAnsP.SetActive(true);
             QuesP.SetActive(false);
