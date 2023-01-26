@@ -22,7 +22,7 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadSceneAsync("Progress 1");
     }
 
-    void Update()
+   /* void Update()
     { 
         if (SceneManager.GetActiveScene().name == "Scene 2.2")
         {
@@ -36,5 +36,5 @@ public class SceneSwitcher : MonoBehaviour
         {
             BGMusic.instance.GetComponent<AudioSource>().Pause();
         }
-    }
+    }*/
 }
