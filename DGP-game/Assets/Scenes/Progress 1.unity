@@ -14297,6 +14297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1195035164}
   - component: {fileID: 1195035166}
+  - component: {fileID: 1195035167}
   - component: {fileID: 1195035165}
   m_Layer: 5
   m_Name: Numerical Panel
@@ -14367,6 +14368,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195035163}
   m_CullTransparentMesh: 1
+--- !u!114 &1195035167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195035163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd8bca84174dda409f9c8eed7bddff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badge: {fileID: 523924829}
+  brightColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
+  dullColor: {r: 0.754717, g: 0.7290851, b: 0.7290851, a: 0.8666667}
 --- !u!1 &1236847382
 GameObject:
   m_ObjectHideFlags: 0

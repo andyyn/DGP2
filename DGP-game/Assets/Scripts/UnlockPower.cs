@@ -25,13 +25,13 @@ public class UnlockPower : MonoBehaviour
     void Update()
     {
         
-        if (counting != count) {
-            happy_face_display.text = counting.ToString();
-        }
+        //if (counting != count) {
+        //    happy_face_display.text = counting.ToString();
+        //}
     }
 
     IEnumerator UpdateText(){
-        for(int i = 0; i<count; i++){
+        for(int i = 0; i<=count; i++){
             happy_face_display.text = i.ToString();
             counting++;
             yield return new WaitForSeconds(count_speed);

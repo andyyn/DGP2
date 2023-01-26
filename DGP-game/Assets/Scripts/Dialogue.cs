@@ -75,7 +75,7 @@ public class Dialogue : MonoBehaviour
         }
         yield return new WaitForSecondsRealtime(4);
         skipComponent.gameObject.SetActive(true);
-        yield return new WaitForSecondsRealtime(4);
+        //yield return new WaitForSecondsRealtime(4);
         continueComponent.gameObject.SetActive(true);
 
     }
