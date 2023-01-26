@@ -98,7 +98,7 @@ public class ProgressBar : MonoBehaviour
     float calNL() {
         float score3 = (float)(PlayerPrefs.GetInt("CTC_Happy_Faces") * 0.2) + 
                         (float)(PlayerPrefs.GetInt("Staircase_Happy_Faces")  * 0.1) + 
-                            (float)(PlayerPrefs.GetInt("NL_Happy_Faces")); // get from 3rd puzzle
+                                                                        3; // get from 3rd puzzle
         Debug.Log("Score3:" + score3);
         return score3;
     }
