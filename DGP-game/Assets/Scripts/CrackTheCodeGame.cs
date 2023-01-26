@@ -13,6 +13,7 @@ public class CrackTheCodeGame : MonoBehaviour
     public Button hint1, hint2, hint3, hint0, submit;
     public TMP_InputField user_Answer;
     public GameObject Hint1P, Hint2P, Hint3P, WrongAnsP, CorrectAnsP, QuesP, HintsP;
+    
 
     public AudioSource source;
     public AudioClip clip; 
@@ -28,6 +29,10 @@ public class CrackTheCodeGame : MonoBehaviour
         happy_faces = 5;
         attempts = 0;
         hintsUsed = 0;
+        // if not played then keep 0
+        PlayerPrefs.SetInt("CTC_Happy_Faces", 0);
+        PlayerPrefs.SetInt("CTC_Hint_Used",0);
+        PlayerPrefs.SetInt("CTC_Attempts",0);
 
     }
 

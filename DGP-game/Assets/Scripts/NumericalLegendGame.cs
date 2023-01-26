@@ -29,6 +29,10 @@ public class NumericalLegendGame : MonoBehaviour
         happy_faces = 5;
         attempts = 0;
         hintsUsed = 0;
+        // if not played then keep 0
+        PlayerPrefs.SetInt("NL_Happy_Faces", 0);
+        PlayerPrefs.SetInt("NL_Hint_Used",0);
+        PlayerPrefs.SetInt("NL_Attempts",0);
 
     }
 
