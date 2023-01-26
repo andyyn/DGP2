@@ -21,4 +21,20 @@ public class SceneSwitcher : MonoBehaviour
     public void Tab2(){
         SceneManager.LoadSceneAsync("Progress 1");
     }
+
+    void Update()
+    { 
+        if (SceneManager.GetActiveScene().name == "Scene 2.2")
+        {
+            BGMusic.instance.GetComponent<AudioSource>().Pause();
+        }
+        if (SceneManager.GetActiveScene().name == "Scene 4.1")
+        {
+            BGMusic.instance.GetComponent<AudioSource>().Pause();
+        }
+        if (SceneManager.GetActiveScene().name == "Scene 5.2")
+        {
+            BGMusic.instance.GetComponent<AudioSource>().Pause();
+        }
+    }
 }
