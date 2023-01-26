@@ -45,6 +45,10 @@ public class Dialogue : MonoBehaviour
                 nameComponent.text = names[i];
             }
         }
+        if (i == lines.Length - 1) {
+            skipComponent.gameObject.SetActive(false);        
+            continueComponent.gameObject.SetActive(false);
+        }
     }
 
     // void Show(){
@@ -83,7 +87,7 @@ public class Dialogue : MonoBehaviour
     void NextLine(){
         if (i < lines.Length -1){
             i++;
-            current_line = new StringBuilder(lines[i], lines[i].Length - 2 + player_name.Length);
+            current_line = new StringBuilder(lines[i], lines[i].Length + 36);
             FindName();
             textComponent.text = string.Empty;
             nameComponent.text = string.Empty;
