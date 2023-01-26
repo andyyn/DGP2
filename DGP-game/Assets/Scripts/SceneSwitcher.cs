@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
+    private float count;
 
     public void playGame(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -22,19 +23,16 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadSceneAsync("Progress 1");
     }
 
-   /* void Update()
-    { 
-        if (SceneManager.GetActiveScene().name == "Scene 2.2")
-        {
-            BGMusic.instance.GetComponent<AudioSource>().Pause();
+    public void Change2Prog1(){
+        count = (float)(PlayerPrefs.GetInt("CTC_Happy_Faces") * 0.2) + 
+                        (float)(PlayerPrefs.GetInt("Staircase_Happy_Faces")  * 0.1) + 
+                            (float)(PlayerPrefs.GetInt("NL_Happy_Faces"));
+
+        if (count < 1.5){
+            SceneManager.LoadSceneAsync("Progress 1");
         }
-        if (SceneManager.GetActiveScene().name == "Scene 4.1")
-        {
-            BGMusic.instance.GetComponent<AudioSource>().Pause();
+        else {
+            SceneManager.LoadSceneAsync("Level Up");
         }
-        if (SceneManager.GetActiveScene().name == "Scene 5.2")
-        {
-            BGMusic.instance.GetComponent<AudioSource>().Pause();
-        }
-    }*/
+    }
 }
